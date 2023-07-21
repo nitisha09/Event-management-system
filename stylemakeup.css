@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;}
+.banner{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0a7cac,#d48787,#dc7e03);
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+  position: center;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+  
+}
+.content{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 30px;
+  margin-bottom: 2.5%;
+  font-family: sans-serif;
+}
+.content a{
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  max-width: 200px 100px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #000;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  margin-top: 1000px;
+  animation-fill-mode: forwards;
+}
+.content a:hover{
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.container{
+max-width: 1170px;
+margin:auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 5%;
+}
+.card {
+  width: 24rem;
+  height: 32rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #f0f0f0;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+.card p {
+  inset: auto auto 80px 30px;
+}
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+.card:hover p, .card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.footer{
+  background-color: #3d4047;
+    padding: 20px 0;
+  }
+  .footer-col{
+   width: 25%;
+   padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #d0caca;
+  display: block;
+  transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+  }
+  .footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+  }
+  @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+  }

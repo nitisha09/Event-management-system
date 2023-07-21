@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+body {
+	background-color: #BF263C;
+	background-attachment: fixed;	
+	background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+	}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+  section {
+    background-color: #BF263C;
+    padding-bottom: 80px; 
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+  }
+  .services {
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services a{
+    text-decoration: none;
+  }
+  .service-1 {
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 35px;
+    border-radius: 10px;
+  }
+ .img {
+    padding-top: 30px;
+  }
+  img {
+    height: 170px;
+    width: 100%;
+  }  
+  .description {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 30px; 
+  }
+  h2 {
+    text-transform: uppercase;
+    color: #BF263C;
+  }
+  p {
+    margin-top: 20px;
+    color: #777;
+  }
+  .shapes {
+    position: relative;
+  }
+  .shape-1,
+  .shape-2,
+  .shape-3,
+  .shape-4,
+  .shape-5,
+  .shape-6 {
+    width: 20px;
+    height: 40px;
+    border-radius: 35px;
+    position: absolute; 
+  }
+  .right {
+    right: 0;
+  }
+  .shape-1 {
+    right: 40px;
+    background-color: #BF263C;
+    top: -60px;
+    transition: all linear .5s;
+  }
+  
+  .shape-2 {
+    right: 20px;
+    background-color: #fff;
+    top: -10px;
+    transition: all linear .5s;
+  }
+  
+  .shape-3 {
+    background-color: #BF263C;
+    top: -60px;
+    transition: all linear .5s;
+  }
+  
+  .service-1:hover .shape-1 {
+    top: -30px;
+  }
+  
+  .service-1:hover .shape-2 {
+    top: -30px;
+  }
+  
+  .service-1:hover .shape-3 {
+    top: -40px;
+  }
+  
+  .shape-4 {
+    background-color: #fff;
+    top: -27px;
+    transition: all linear .5s;
+  }
+  
+  .shape-5 {
+    background-color: #BF263C;
+    left: 20px;
+    top: 17px;
+    transition: all linear .5s;
+  }
+  
+  .shape-6 {
+    background-color: #fff;
+    left: 40px;
+    top: -27px;
+    transition: all linear .5s;
+  }
+  
+  .service-1:hover .shape-4 {
+    top: -7px;
+  }
+  
+  .service-1:hover .shape-5 {
+    top: 0;
+  }
+  
+  .service-1:hover .shape-6 {
+    top: -15px;
+  }
+  
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+.form__button:active{
+    transform: scale(0.98);
+}

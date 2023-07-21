@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="text.css">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	</head>
+    <body onload="document.form1.username.focus();">
+        <div class="container">
+            <form class="form form--hidden" id="login" action="authenticate.php" method="post">
+                <h1 class="form_title">Login</h1>
+                <div class="form_message form_message_error"></div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input" autofocus placeholder="Username" name="username" id="username" required>
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input_group">
+                    <input type="password" class="form_input" autofocus placeholder="Password" name="password" id="password" required>
+                    <div class="form_input-error-message"></div>
+                </div>
+                <input  class="form__button" type="submit" value="Login" id="button" name="button">
+                <p class="form_text">
+                    <a href="#" class="form_link"id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+            </form>
+            <form class="form" name="form1" id="createAccount" action="register.php" method="post" onsubmit='return formValidation()'>
+                <h1 class="form_title">Create Account</h1>
+                <div class="form_message form_message_error"></div>
+                <div class="form_input_group">
+                    <input type="text" pattern="^[a-zA-Z]+" class="form_input" autofocus placeholder="Name" required name="uname" >
+                </div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input" autofocus placeholder="Username" required name="username">
+                </div>
+                <div class="form_input_group">
+                    <input type="email" class="form_input" autofocus placeholder="Email" required name="email">
+                </div>
+                <div class="form_input_group">
+                    <input type="text" id="signupnumber" class="form_input" autofocus placeholder="Phone Number" name="pnumber">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input_group">
+                    <input type="password" id="create_pw" class="form_input" autofocus placeholder="Password" name="password">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <input  class="form__button" type="submit" value="Submit" id="button" name="submit">
+                <p class="form_text">
+                    <a href="#" class="form_link"id="linkLogin">Already have an account? Login</a>
+                </p>
+            </form>   
+        </div>
+        <script src="form.js"></script>
+    </body>
+</html>
